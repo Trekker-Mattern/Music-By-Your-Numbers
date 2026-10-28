@@ -84,6 +84,7 @@ INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, albu
 (46, 11, 9, 2015, 'Josh Middleton', 'Dormant Heart');
 
 INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALUES 
+-- Dream Theater (Artist id = 0)
 (0, "In the Name of God", 0, 0, 900),
 (1, "Scene Six: Home", 1, 0, 600),
 (2, "Pull Me Under", 2, 0, 494),
