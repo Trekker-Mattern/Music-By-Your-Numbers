@@ -1,4 +1,5 @@
 INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALUES 
+-- Dream Theater (Artist id = 0)
 (0, "In the Name of God", 0, 0, 900),
 (1, "Scene Six: Home", 1, 0, 600),
 (2, "Pull Me Under", 2, 0, 494),
@@ -98,6 +99,88 @@ INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALU
 (74, 'Deadwood', 46, 11, 297),
 (75, 'I Sever', 46, 11, 287);
 
+
+INSERT INTO artist(artist_id, artist_name, founded_date, founded_city) VALUES
+(0, 'Dream Theater', '1985-01-01', 'Boston'),
+(1, 'Lamb of God', '1994-01-01', 'Richmond'),
+(2, 'Gojira', '1996-01-01', 'Ondres'),
+(3, 'Tool', '1990-01-01', 'Los Angeles'),
+(4, 'Mastodon', '2000-01-01', 'Atlanta'),
+(5, 'Crowbar', '1990-01-01', 'New Orleans'),
+(6, 'Deftones', '1988-01-01', 'Sacramento'),
+(7, 'Pain of Salvation', '1984-01-01', 'Eskilstuna'),
+(8, 'Periphery', '2005-01-01', 'Bethesda'),
+(9, 'Agalloch', '1995-01-01', 'Portland'),
+(10, 'Led Zeppelin', '1968-01-01', 'London'),
+(11, 'Sylosis', '2000-01-01', 'Reading');
+
+
+
+
+
+-- Fun SELECT statements
+SELECT artist_name FROM artist AS band1 WHERE EXISTS (SELECT founded_city FROM artist AS band2 WHERE band2.founded_city = band1.founded_city AND NOT band2.artist_id =band1.artist_id );
+
+INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, album_name) VALUES
+-- Dream Theater (artist_id = 0)
+(0, 0, 8, 2003, 'John Petrucci, Mike Portnoy', 'Train of Thought'),
+(1, 0, 12, 1999, 'John Petrucci, Mike Portnoy', 'Metropolis Pt. 2: Scenes from a Memory'),
+(2, 0, 8, 1992, 'David Prater', 'Images and Words'),
+(3, 0, 11, 1994, 'Duane Baron, John Purdell', 'Awake'),
+(4, 0, 7, 1995, 'Dream Theater', 'A Change of Seasons'),
+(5, 0, 6, 2002, 'John Petrucci, Mike Portnoy', 'Six Degrees of Inner Turbulence'),
+(6, 0, 8, 2007, 'John Petrucci, Mike Portnoy', 'Systematic Chaos'),
+(7, 0, 6, 2009, 'John Petrucci, Mike Portnoy', 'Black Clouds & Silver Linings'),
+(8, 0, 8, 2011, 'John Petrucci', 'A Dramatic Turn of Events'),
+(9, 0, 9, 2013, 'John Petrucci, Richard Chycki', 'Dream Theater'),
+(10, 0, 8, 2005, 'John Petrucci, Mike Portnoy', 'Octavarium'),
+
+-- Lamb of God (artist_id = 1)
+(11, 1, 12, 2004, 'Machine', 'Ashes of the Wake'),
+(12, 1, 12, 2006, 'Machine', 'Sacrament'),
+(13, 1, 11, 2009, 'Josh Wilbur', 'Wrath'),
+
+-- Gojira (artist_id = 2)
+(14, 2, 11, 2005, 'Gojira', 'From Mars to Sirius'),
+(15, 2, 12, 2008, 'Logan Mader', 'The Way of All Flesh'),
+(16, 2, 10, 2016, 'Joe Duplantier', 'Magma'),
+
+-- Tool (artist_id = 3)
+(17, 3, 13, 2001, 'David Bottrill', 'Lateralus'),
+(18, 3, 15, 1996, 'David Bottrill', 'Ænima'),
+(19, 3, 10, 2019, 'Joe Barresi', 'Fear Inoculum'),
+
+-- Mastodon (artist_id = 4)
+(20, 4, 10, 2004, 'Matt Bayles', 'Leviathan'),
+(21, 4, 7, 2009, 'Brendan O''Brien', 'Crack the Skye'),
+(22, 4, 13, 2014, 'Nick Raskulinecz', 'Once More ''Round the Sun'),
+
+-- Crowbar (artist_id = 5)
+(23, 5, 10, 1993, 'Phil Anselmo', 'Crowbar'),
+(24, 5, 11, 1996, 'Simon Efemy', 'Broken Glass'),
+(25, 5, 12, 1998, 'Keith Falgout', 'Odd Fellows Rest'),
+
+-- Deftones (artist_id = 6)
+(26, 6, 11, 1997, 'Terry Date', 'Around the Fur'),
+(27, 6, 12, 2000, 'Terry Date', 'White Pony'),
+(28, 6, 11, 2010, 'Nick Raskulinecz', 'Diamond Eyes'),
+
+-- Pain of Salvation (artist_id = 7)
+(29, 7, 10, 2000, 'Daniel Gildenlöw', 'The Perfect Element, Pt. I'),
+(31, 7, 10, 2002, 'Daniel Gildenlöw', 'Remedy Lane'),
+(32, 7, 10, 2017, 'Daniel Gildenlöw', 'In the Passing Light of Day'),
+(33, 7, 10, 2007, 'Daniel Gildenlöw', 'Scarsick'),
+
+-- Periphery (artist_id = 8)
+(34, 8, 11, 2010, 'Misha Mansoor', 'Periphery'),
+(35, 8, 11, 2016, 'Misha Mansoor', 'Periphery III: Select Difficulty'),
+(36, 8, 11, 2012, 'Misha Mansoor', 'Periphery II: This Time It''s Personal'),
+(37, 8, 6, 2019, 'Misha Mansoor', 'Periphery IV: Hail Stan'),
+
+-- Agalloch (artist_id = 9)
+(38, 9, 8, 2002, 'Agalloch', 'The Mantle'),
+(39, 9, 8, 2006, 'Billy Anderson', 'Ashes Against the Grain'),
+(40, 9, 8, 2004, 'Billy Anderson', 'Marrow of the Spirit'),
 
 
 INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, album_name) VALUES
