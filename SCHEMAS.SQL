@@ -82,6 +82,7 @@ ALTER TABLE artist ADD CONSTRAINT artist_name_constraint UNIQUE (artist_name);
 ALTER TABLE rating ADD song_id INT;
 ALTER TABLE rating ADD FOREIGN KEY song_key(song_id) references song(song_id);
 ALTER TABLE rating ADD song_name VARCHAR(50); 
+ALTER TABLE rating drop column song_name;
 
 
 
