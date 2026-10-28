@@ -114,3 +114,10 @@ INSERT INTO artist(artist_id, artist_name, founded_date, founded_city) VALUES
 (9, 'Agalloch', '1995-01-01', 'Portland'),
 (10, 'Led Zeppelin', '1968-01-01', 'London'),
 (11, 'Sylosis', '2000-01-01', 'Reading');
+
+
+
+
+
+-- Fun SELECT statements
+SELECT artist_name FROM artist AS band1 WHERE EXISTS (SELECT founded_city FROM artist AS band2 WHERE band2.founded_city = band1.founded_city AND NOT band2.artist_id =band1.artist_id );
