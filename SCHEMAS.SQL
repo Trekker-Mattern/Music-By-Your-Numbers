@@ -71,9 +71,11 @@ ALTER TABLE song ADD CONSTRAINT duration_constraint CHECK (duration_seconds > 0)
 -- Album
 ALTER TABLE album ADD CONSTRAINT song_count_constraint CHECK (song_count > 1);
 ALTER TABLE album ADD CONSTRAINT year_produced_constraint CHECK (year_produced BETWEEN `1700-01-01` AND now());
+ALTER TABLE album ADD album_name VARCHAR(50);
 
 -- User
 ALTER TABLE user ADD CONSTRAINT number_of_ratings_constraint CHECK (number_of_ratings >= 0);
 
 -- Artist
 ALTER TABLE artist ADD CONSTRAINT artist_name_constraint UNIQUE (artist_name);
+
