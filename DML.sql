@@ -238,3 +238,42 @@ INSERT INTO rating(rating_id, val, rating_comment, posted_user, song_id) VALUES
 (25, 5, 'Ghosts of the Midwinter Fires is hauntingly beautiful.', 7, 65),
 (26, 3, 'Fear the World is good but a little repetitive.', 7, 73),
 (27, 5, 'Marigold has a great groove and melodic hooks.', 7, 57);
+
+INSERT INTO artist(artist_id, artist_name, founded_date, founded_city) VALUES
+(12, 'Nirvana', '1987-01-01', 'Aberdeen'),
+(13, 'Alice in Chains', '1987-01-01', 'Seattle');
+
+INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, album_name) VALUES
+(47, 12, 12, 1991, 'Butch Vig', 'Nevermind'),
+(48, 13, 13, 1992, 'Dave Jerden', 'Dirt');
+
+INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALUES
+-- Nirvana - Nevermind (artist_id = 12, album_id = 47)
+(76, 'Smells Like Teen Spirit', 47, 12, 301),
+(77, 'In Bloom', 47, 12, 255),
+(78, 'Come as You Are', 47, 12, 219),
+(79, 'Breed', 47, 12, 184),
+(80, 'Lithium', 47, 12, 257),
+(81, 'Polly', 47, 12, 177),
+(82, 'Territorial Pissings', 47, 12, 142),
+(83, 'Drain You', 47, 12, 223),
+(84, 'Lounge Act', 47, 12, 156),
+(85, 'Stay Away', 47, 12, 212),
+(86, 'On a Plain', 47, 12, 196),
+(87, 'Something in the Way', 47, 12, 232);
+
+-- Alice in Chains - Dirt (artist_id = 13, album_id = 48)
+(88, 'Them Bones', 48, 13, 149),
+(89, 'Dam That River', 48, 13, 189),
+(90, 'Rain When I Die', 48, 13, 361),
+(91, 'Down in a Hole', 48, 13, 338),
+(92, 'Sickman', 48, 13, 330),
+(93, 'Rooster', 48, 13, 375),
+(94, 'Junkhead', 48, 13, 429),
+(95, 'Dirt', 48, 13, 317),
+(96, 'God Smack', 48, 13, 231),
+(97, 'Untitled', 48, 13, 103),
+(98, 'Hate to Feel', 48, 13, 316),
+(99, 'Angry Chair', 48, 13, 287),
+(100, 'Would?', 48, 13, 208);
+
