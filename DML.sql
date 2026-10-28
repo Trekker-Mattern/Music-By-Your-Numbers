@@ -224,8 +224,8 @@ INSERT INTO rating(rating_id, val, rating_comment, posted_user, song_id) VALUES
 (17, 3, 'The Motherload is catchy but more polished than older stuff.', 4, 40),
 
 -- Taylor Brooks (uid = 5)
-(18, 5, 'Change (In the House of Flies) is endlessly replayable.', 5, 49)'),
-(19, 4, 'My Own Summer is raw and heavy.', 5, 46)'),
+(18, 5, 'Change (In the House of Flies) is endlessly replayable.', 5, 49),
+(19, 4, 'My Own Summer is raw and heavy.', 5, 46),
 (20, 5, 'Diamond Eyes was a great comeback track.', 5, 50),
 
 -- Morgan Diaz (uid = 6)
