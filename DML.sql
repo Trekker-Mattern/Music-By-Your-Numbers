@@ -65,7 +65,7 @@ INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALU
 
 -- Pain of Salvation (artist_id = 7)
 (51, 'Used', 29, 7, 311),
-(52, 'Ashes', 30, 7, 280),
+(52, 'Ashes', 29, 7, 280),
 (53, 'Undertow', 31, 7, 264),
 (54, 'Reasons', 32, 7, 246),
 (55, 'Kingdom of Loss', 33, 7, 347),
@@ -135,9 +135,9 @@ INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, albu
 (22, 4, 13, 2014, 'Nick Raskulinecz', 'Once More ''Round the Sun'),
 
 -- Crowbar (artist_id = 5)
-(23, 5, 10, 1993, NULL, 'Crowbar'),
-(24, 5, 11, 1996, NULL, 'Broken Glass'),
-(25, 5, 12, 1998, NULL, 'Odd Fellows Rest'),
+(23, 5, 10, 1993, 'Phil Anselmo', 'Crowbar'),
+(24, 5, 11, 1996, 'Simon Efemy', 'Broken Glass'),
+(25, 5, 12, 1998, 'Keith Falgout', 'Odd Fellows Rest'),
 
 -- Deftones (artist_id = 6)
 (26, 6, 11, 1997, 'Terry Date', 'Around the Fur'),
@@ -146,10 +146,9 @@ INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, albu
 
 -- Pain of Salvation (artist_id = 7)
 (29, 7, 10, 2000, 'Daniel Gildenlöw', 'The Perfect Element, Pt. I'),
-(30, 7, 10, NULL, 'Daniel Gildenlöw', NULL),
-(31, 7, 10, NULL, 'Daniel Gildenlöw', NULL),
-(32, 7, 10, NULL, 'Daniel Gildenlöw', NULL),
-(33, 7, 10, NULL, 'Daniel Gildenlöw', NULL),
+(31, 7, 10, 2002, 'Daniel Gildenlöw', 'Remedy Lane'),
+(32, 7, 10, 2017, 'Daniel Gildenlöw', 'In the Passing Light of Day'),
+(33, 7, 10, 2007, 'Daniel Gildenlöw', 'Scarsick'),
 
 -- Periphery (artist_id = 8)
 (34, 8, 11, 2010, 'Misha Mansoor', 'Periphery'),
@@ -170,4 +169,5 @@ INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, albu
 -- Sylosis (artist_id = 11)
 (44, 11, 10, 2011, 'Scott Atkins', 'Edge of the Earth'),
 (45, 11, 11, 2008, 'Scott Atkins', 'Conclusion of an Age'),
-(46, 11, 9, 2015, NULL, 'Dormant Heart');
+(46, 11, 9, 2015, 'Josh Middleton', 'Dormant Heart');
+
