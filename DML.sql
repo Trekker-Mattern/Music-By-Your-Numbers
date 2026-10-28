@@ -194,47 +194,47 @@ INSERT INTO user(uid, name, number_of_ratings, spotify_account) VALUES
 (6, 'Morgan Diaz', 3, 'mdiaz_vinyl'),
 (7, 'Jamie Walsh', 4, 'jamiewalsh_prog');
 
-INSERT INTO rating(rating_id, val, rating_comment, posted_user, song_id, song_name) VALUES
+INSERT INTO rating(rating_id, val, rating_comment, posted_user, song_id) VALUES
 -- Alex Rivera (uid = 0)
-(0, 5, 'Pull Me Under is a perfect opener, the riff still hits.', 0, 2, 'Pull Me Under'),
-(1, 5, 'Scene Six: Home might be the best Dream Theater track ever.', 0, 1, 'Scene Six: Home'),
-(2, 4, 'Octavarium is long but the build is worth it.', 0, 20, 'Octavarium'),
-(3, 3, 'In the Name of God drags a bit in the middle.', 0, 0, 'In the Name of God'),
+(0, 5, 'Pull Me Under is a perfect opener, the riff still hits.', 0, 2),
+(1, 5, 'Scene Six: Home might be the best Dream Theater track ever.', 0, 1),
+(2, 4, 'Octavarium is long but the build is worth it.', 0, 20),
+(3, 3, 'In the Name of God drags a bit in the middle.', 0, 0),
 
 -- Jordan Lee (uid = 1)
-(4, 5, 'Laid to Rest is pure aggression, great live.', 1, 21, 'Laid to Rest'),
-(5, 4, 'Redneck has an insane groove. Heavy in the best way.', 1, 22, 'Redneck'),
-(6, 3, 'Now You''ve Got Something to Die For is solid but not their best.', 1, 24, 'Now You''ve Got Something to Die For'),
+(4, 5, 'Laid to Rest is pure aggression, great live.', 1, 21),
+(5, 4, 'Redneck has an insane groove. Heavy in the best way.', 1, 22),
+(6, 3, 'Now You''ve Got Something to Die For is solid but not their best.', 1, 24),
 
 -- Sam Patel (uid = 2)
-(7, 5, 'Flying Whales is gorgeous, huge atmosphere.', 2, 26, 'Flying Whales'),
-(8, 5, 'The Art of Dying is crushing. Gojira at their best.', 2, 28, 'The Art of Dying'),
-(9, 4, 'Stranded has a great chorus.', 2, 29, 'Stranded'),
-(10, 4, 'Silvera sounds massive on good headphones.', 2, 30, 'Silvera'),
+(7, 5, 'Flying Whales is gorgeous, huge atmosphere.', 2, 26),
+(8, 5, 'The Art of Dying is crushing. Gojira at their best.', 2, 28),
+(9, 4, 'Stranded has a great chorus.', 2, 29),
+(10, 4, 'Silvera sounds massive on good headphones.', 2, 30),
 
 -- Casey Morgan (uid = 3)
-(11, 5, 'Lateralus is a masterpiece, the time signatures are wild.', 3, 33, 'Lateralus'),
-(12, 4, 'Schism never gets old.', 3, 31, 'Schism'),
-(13, 5, 'Pneuma builds beautifully over 12 minutes.', 3, 35, 'Pneuma'),
+(11, 5, 'Lateralus is a masterpiece, the time signatures are wild.', 3, 33),
+(12, 4, 'Schism never gets old.', 3, 31),
+(13, 5, 'Pneuma builds beautifully over 12 minutes.', 3, 35),
 
 -- Riley Chen (uid = 4)
-(14, 4, 'Blood and Thunder is a great album opener.', 4, 36, 'Blood and Thunder'),
-(15, 5, 'The Czar is an epic, love the multi-part structure.', 4, 39, 'The Czar'),
-(16, 4, 'Oblivion has such a haunting vocal line.', 4, 37, 'Oblivion'),
-(17, 3, 'The Motherload is catchy but more polished than older stuff.', 4, 40, 'The Motherload'),
+(14, 4, 'Blood and Thunder is a great album opener.', 4, 36),
+(15, 5, 'The Czar is an epic, love the multi-part structure.', 4, 39),
+(16, 4, 'Oblivion has such a haunting vocal line.', 4, 37),
+(17, 3, 'The Motherload is catchy but more polished than older stuff.', 4, 40),
 
 -- Taylor Brooks (uid = 5)
-(18, 5, 'Change (In the House of Flies) is endlessly replayable.', 5, 49, 'Change (In the House of Flies)'),
-(19, 4, 'My Own Summer is raw and heavy.', 5, 46, 'My Own Summer (Shove It)'),
-(20, 5, 'Diamond Eyes was a great comeback track.', 5, 50, 'Diamond Eyes'),
+(18, 5, 'Change (In the House of Flies) is endlessly replayable.', 5, 49)'),
+(19, 4, 'My Own Summer is raw and heavy.', 5, 46)'),
+(20, 5, 'Diamond Eyes was a great comeback track.', 5, 50),
 
 -- Morgan Diaz (uid = 6)
-(21, 4, 'Stairway to Heaven earns its legend status.', 6, 66, 'Stairway to Heaven'),
-(22, 5, 'When the Levee Breaks has the best drum sound ever recorded.', 6, 70, 'When the Levee Breaks'),
-(23, 4, 'Kashmir feels huge and hypnotic.', 6, 67, 'Kashmir'),
+(21, 4, 'Stairway to Heaven earns its legend status.', 6, 66),
+(22, 5, 'When the Levee Breaks has the best drum sound ever recorded.', 6, 70),
+(23, 4, 'Kashmir feels huge and hypnotic.', 6, 67),
 
 -- Jamie Walsh (uid = 7)
-(24, 4, 'Reptile is a wild ride, nearly 16 minutes and never boring.', 7, 60, 'Reptile'),
-(25, 5, 'Ghosts of the Midwinter Fires is hauntingly beautiful.', 7, 65, 'Ghosts of the Midwinter Fires'),
-(26, 3, 'Fear the World is good but a little repetitive.', 7, 73, 'Fear the World'),
-(27, 5, 'Marigold has a great groove and melodic hooks.', 7, 57, 'Marigold');
+(24, 4, 'Reptile is a wild ride, nearly 16 minutes and never boring.', 7, 60),
+(25, 5, 'Ghosts of the Midwinter Fires is hauntingly beautiful.', 7, 65),
+(26, 3, 'Fear the World is good but a little repetitive.', 7, 73),
+(27, 5, 'Marigold has a great groove and melodic hooks.', 7, 57);
