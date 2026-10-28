@@ -1,5 +1,6 @@
 
 INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALUES 
+-- Dream Theater (Artist id = 0)
 (0, "In the Name of God", 0, 0, 900),
 (1, "Scene Six: Home", 1, 0, 600),
 (2, "Pull Me Under", 2, 0, 494),
@@ -100,4 +101,16 @@ INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALU
 (75, 'I Sever', 60, 11, 287);
 
 
-
+INSERT INTO artist(artist_id, artist_name, founded_date, founded_city) VALUES
+(0, 'Dream Theater', '1985-01-01', 'Boston'),
+(1, 'Lamb of God', '1994-01-01', 'Richmond'),
+(2, 'Gojira', '1996-01-01', 'Ondres'),
+(3, 'Tool', '1990-01-01', 'Los Angeles'),
+(4, 'Mastodon', '2000-01-01', 'Atlanta'),
+(5, 'Crowbar', '1990-01-01', 'New Orleans'),
+(6, 'Deftones', '1988-01-01', 'Sacramento'),
+(7, 'Pain of Salvation', '1984-01-01', 'Eskilstuna'),
+(8, 'Periphery', '2005-01-01', 'Bethesda'),
+(9, 'Agalloch', '1995-01-01', 'Portland'),
+(10, 'Led Zeppelin', '1968-01-01', 'London'),
+(11, 'Sylosis', '2000-01-01', 'Reading');
