@@ -1,3 +1,88 @@
+INSERT INTO artist(artist_id, artist_name, founded_date, founded_city) VALUES
+(0, 'Dream Theater', '1985-01-01', 'Boston'),
+(1, 'Lamb of God', '1994-01-01', 'Richmond'),
+(2, 'Gojira', '1996-01-01', 'Ondres'),
+(3, 'Tool', '1990-01-01', 'Los Angeles'),
+(4, 'Mastodon', '2000-01-01', 'Atlanta'),
+(5, 'Crowbar', '1989-01-01', 'New Orleans'),
+(6, 'Deftones', '1988-01-01', 'Sacramento'),
+(7, 'Pain of Salvation', '1984-01-01', 'Eskilstuna'),
+(8, 'Periphery', '2005-01-01', 'Bethesda'),
+(9, 'Agalloch', '1995-01-01', 'Portland'),
+(10, 'Led Zeppelin', '1968-01-01', 'London'),
+(11, 'Sylosis', '2000-01-01', 'Reading');
+
+INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, album_name) VALUES
+-- Dream Theater (artist_id = 0)
+(0, 0, 8, 2003, 'John Petrucci, Mike Portnoy', 'Train of Thought'),
+(1, 0, 12, 1999, 'John Petrucci, Mike Portnoy', 'Metropolis Pt. 2: Scenes from a Memory'),
+(2, 0, 8, 1992, 'David Prater', 'Images and Words'),
+(3, 0, 11, 1994, 'Duane Baron, John Purdell', 'Awake'),
+(4, 0, 7, 1995, 'Dream Theater', 'A Change of Seasons'),
+(5, 0, 6, 2002, 'John Petrucci, Mike Portnoy', 'Six Degrees of Inner Turbulence'),
+(6, 0, 8, 2007, 'John Petrucci, Mike Portnoy', 'Systematic Chaos'),
+(7, 0, 6, 2009, 'John Petrucci, Mike Portnoy', 'Black Clouds & Silver Linings'),
+(8, 0, 8, 2011, 'John Petrucci', 'A Dramatic Turn of Events'),
+(9, 0, 9, 2013, 'John Petrucci, Richard Chycki', 'Dream Theater'),
+(10, 0, 8, 2005, 'John Petrucci, Mike Portnoy', 'Octavarium'),
+
+-- Lamb of God (artist_id = 1)
+(11, 1, 12, 2004, 'Machine', 'Ashes of the Wake'),
+(12, 1, 12, 2006, 'Machine', 'Sacrament'),
+(13, 1, 11, 2009, 'Josh Wilbur', 'Wrath'),
+
+-- Gojira (artist_id = 2)
+(14, 2, 11, 2005, 'Gojira', 'From Mars to Sirius'),
+(15, 2, 12, 2008, 'Logan Mader', 'The Way of All Flesh'),
+(16, 2, 10, 2016, 'Joe Duplantier', 'Magma'),
+
+-- Tool (artist_id = 3)
+(17, 3, 13, 2001, 'David Bottrill', 'Lateralus'),
+(18, 3, 15, 1996, 'David Bottrill', 'Ænima'),
+(19, 3, 10, 2019, 'Joe Barresi', 'Fear Inoculum'),
+
+-- Mastodon (artist_id = 4)
+(20, 4, 10, 2004, 'Matt Bayles', 'Leviathan'),
+(21, 4, 7, 2009, 'Brendan O''Brien', 'Crack the Skye'),
+(22, 4, 13, 2014, 'Nick Raskulinecz', 'Once More ''Round the Sun'),
+
+-- Crowbar (artist_id = 5)
+(23, 5, 10, 1993, 'Phil Anselmo', 'Crowbar'),
+(24, 5, 11, 1996, 'Simon Efemy', 'Broken Glass'),
+(25, 5, 12, 1998, 'Keith Falgout', 'Odd Fellows Rest'),
+
+-- Deftones (artist_id = 6)
+(26, 6, 11, 1997, 'Terry Date', 'Around the Fur'),
+(27, 6, 12, 2000, 'Terry Date', 'White Pony'),
+(28, 6, 11, 2010, 'Nick Raskulinecz', 'Diamond Eyes'),
+
+-- Pain of Salvation (artist_id = 7)
+(29, 7, 10, 2000, 'Daniel Gildenlöw', 'The Perfect Element, Pt. I'),
+(31, 7, 10, 2002, 'Daniel Gildenlöw', 'Remedy Lane'),
+(32, 7, 10, 2017, 'Daniel Gildenlöw', 'In the Passing Light of Day'),
+(33, 7, 10, 2007, 'Daniel Gildenlöw', 'Scarsick'),
+
+-- Periphery (artist_id = 8)
+(34, 8, 11, 2010, 'Misha Mansoor', 'Periphery'),
+(35, 8, 11, 2016, 'Misha Mansoor', 'Periphery III: Select Difficulty'),
+(36, 8, 11, 2012, 'Misha Mansoor', 'Periphery II: This Time It''s Personal'),
+(37, 8, 6, 2019, 'Misha Mansoor', 'Periphery IV: Hail Stan'),
+
+-- Agalloch (artist_id = 9)
+(38, 9, 8, 2002, 'Agalloch', 'The Mantle'),
+(39, 9, 8, 2006, 'Billy Anderson', 'Ashes Against the Grain'),
+(40, 9, 8, 2004, 'Billy Anderson', 'Marrow of the Spirit'),
+
+-- Led Zeppelin (artist_id = 10)
+(41, 10, 8, 1971, 'Jimmy Page', 'Led Zeppelin IV'),
+(42, 10, 15, 1975, 'Jimmy Page', 'Physical Graffiti'),
+(43, 10, 10, 1970, 'Jimmy Page', 'Led Zeppelin III'),
+
+-- Sylosis (artist_id = 11)
+(44, 11, 10, 2011, 'Scott Atkins', 'Edge of the Earth'),
+(45, 11, 11, 2008, 'Scott Atkins', 'Conclusion of an Age'),
+(46, 11, 9, 2015, 'Josh Middleton', 'Dormant Heart');
+
 INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALUES 
 -- Dream Theater (Artist id = 0)
 (0, "In the Name of God", 0, 0, 900),
@@ -99,85 +184,57 @@ INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALU
 (74, 'Deadwood', 46, 11, 297),
 (75, 'I Sever', 46, 11, 287);
 
+INSERT INTO user(uid, name, number_of_ratings, spotify_account) VALUES
+(0, 'Alex Rivera', 4, 'alex.rivera.music'),
+(1, 'Jordan Lee', 3, 'jlee_metalhead'),
+(2, 'Sam Patel', 4, 'sampatel_spins'),
+(3, 'Casey Morgan', 3, 'caseym_tunes'),
+(4, 'Riley Chen', 4, 'riley.chen.listens'),
+(5, 'Taylor Brooks', 3, 'tbrooks_playlist'),
+(6, 'Morgan Diaz', 3, 'mdiaz_vinyl'),
+(7, 'Jamie Walsh', 4, 'jamiewalsh_prog');
 
-INSERT INTO artist(artist_id, artist_name, founded_date, founded_city) VALUES
-(0, 'Dream Theater', '1985-01-01', 'Boston'),
-(1, 'Lamb of God', '1994-01-01', 'Richmond'),
-(2, 'Gojira', '1996-01-01', 'Ondres'),
-(3, 'Tool', '1990-01-01', 'Los Angeles'),
-(4, 'Mastodon', '2000-01-01', 'Atlanta'),
-(5, 'Crowbar', '1990-01-01', 'New Orleans'),
-(6, 'Deftones', '1988-01-01', 'Sacramento'),
-(7, 'Pain of Salvation', '1984-01-01', 'Eskilstuna'),
-(8, 'Periphery', '2005-01-01', 'Bethesda'),
-(9, 'Agalloch', '1995-01-01', 'Portland'),
-(10, 'Led Zeppelin', '1968-01-01', 'London'),
-(11, 'Sylosis', '2000-01-01', 'Reading');
+INSERT INTO rating(rating_id, val, rating_comment, posted_user, song_id, song_name) VALUES
+-- Alex Rivera (uid = 0)
+(0, 5, 'Pull Me Under is a perfect opener, the riff still hits.', 0, 2, 'Pull Me Under'),
+(1, 5, 'Scene Six: Home might be the best Dream Theater track ever.', 0, 1, 'Scene Six: Home'),
+(2, 4, 'Octavarium is long but the build is worth it.', 0, 20, 'Octavarium'),
+(3, 3, 'In the Name of God drags a bit in the middle.', 0, 0, 'In the Name of God'),
 
+-- Jordan Lee (uid = 1)
+(4, 5, 'Laid to Rest is pure aggression, great live.', 1, 21, 'Laid to Rest'),
+(5, 4, 'Redneck has an insane groove. Heavy in the best way.', 1, 22, 'Redneck'),
+(6, 3, 'Now You''ve Got Something to Die For is solid but not their best.', 1, 24, 'Now You''ve Got Something to Die For'),
 
+-- Sam Patel (uid = 2)
+(7, 5, 'Flying Whales is gorgeous, huge atmosphere.', 2, 26, 'Flying Whales'),
+(8, 5, 'The Art of Dying is crushing. Gojira at their best.', 2, 28, 'The Art of Dying'),
+(9, 4, 'Stranded has a great chorus.', 2, 29, 'Stranded'),
+(10, 4, 'Silvera sounds massive on good headphones.', 2, 30, 'Silvera'),
 
+-- Casey Morgan (uid = 3)
+(11, 5, 'Lateralus is a masterpiece, the time signatures are wild.', 3, 33, 'Lateralus'),
+(12, 4, 'Schism never gets old.', 3, 31, 'Schism'),
+(13, 5, 'Pneuma builds beautifully over 12 minutes.', 3, 35, 'Pneuma'),
 
+-- Riley Chen (uid = 4)
+(14, 4, 'Blood and Thunder is a great album opener.', 4, 36, 'Blood and Thunder'),
+(15, 5, 'The Czar is an epic, love the multi-part structure.', 4, 39, 'The Czar'),
+(16, 4, 'Oblivion has such a haunting vocal line.', 4, 37, 'Oblivion'),
+(17, 3, 'The Motherload is catchy but more polished than older stuff.', 4, 40, 'The Motherload'),
 
--- Fun SELECT statements
-SELECT artist_name FROM artist AS band1 WHERE EXISTS (SELECT founded_city FROM artist AS band2 WHERE band2.founded_city = band1.founded_city AND NOT band2.artist_id =band1.artist_id );
+-- Taylor Brooks (uid = 5)
+(18, 5, 'Change (In the House of Flies) is endlessly replayable.', 5, 49, 'Change (In the House of Flies)'),
+(19, 4, 'My Own Summer is raw and heavy.', 5, 46, 'My Own Summer (Shove It)'),
+(20, 5, 'Diamond Eyes was a great comeback track.', 5, 50, 'Diamond Eyes'),
 
-INSERT INTO album(album_id, artist_id, song_count, year_produced, producer, album_name) VALUES
--- Dream Theater (artist_id = 0)
-(0, 0, 8, 2003, 'John Petrucci, Mike Portnoy', 'Train of Thought'),
-(1, 0, 12, 1999, 'John Petrucci, Mike Portnoy', 'Metropolis Pt. 2: Scenes from a Memory'),
-(2, 0, 8, 1992, 'David Prater', 'Images and Words'),
-(3, 0, 11, 1994, 'Duane Baron, John Purdell', 'Awake'),
-(4, 0, 7, 1995, 'Dream Theater', 'A Change of Seasons'),
-(5, 0, 6, 2002, 'John Petrucci, Mike Portnoy', 'Six Degrees of Inner Turbulence'),
-(6, 0, 8, 2007, 'John Petrucci, Mike Portnoy', 'Systematic Chaos'),
-(7, 0, 6, 2009, 'John Petrucci, Mike Portnoy', 'Black Clouds & Silver Linings'),
-(8, 0, 8, 2011, 'John Petrucci', 'A Dramatic Turn of Events'),
-(9, 0, 9, 2013, 'John Petrucci, Richard Chycki', 'Dream Theater'),
-(10, 0, 8, 2005, 'John Petrucci, Mike Portnoy', 'Octavarium'),
+-- Morgan Diaz (uid = 6)
+(21, 4, 'Stairway to Heaven earns its legend status.', 6, 66, 'Stairway to Heaven'),
+(22, 5, 'When the Levee Breaks has the best drum sound ever recorded.', 6, 70, 'When the Levee Breaks'),
+(23, 4, 'Kashmir feels huge and hypnotic.', 6, 67, 'Kashmir'),
 
--- Lamb of God (artist_id = 1)
-(11, 1, 12, 2004, 'Machine', 'Ashes of the Wake'),
-(12, 1, 12, 2006, 'Machine', 'Sacrament'),
-(13, 1, 11, 2009, 'Josh Wilbur', 'Wrath'),
-
--- Gojira (artist_id = 2)
-(14, 2, 11, 2005, 'Gojira', 'From Mars to Sirius'),
-(15, 2, 12, 2008, 'Logan Mader', 'The Way of All Flesh'),
-(16, 2, 10, 2016, 'Joe Duplantier', 'Magma'),
-
--- Tool (artist_id = 3)
-(17, 3, 13, 2001, 'David Bottrill', 'Lateralus'),
-(18, 3, 15, 1996, 'David Bottrill', 'Ænima'),
-(19, 3, 10, 2019, 'Joe Barresi', 'Fear Inoculum'),
-
--- Mastodon (artist_id = 4)
-(20, 4, 10, 2004, 'Matt Bayles', 'Leviathan'),
-(21, 4, 7, 2009, 'Brendan O''Brien', 'Crack the Skye'),
-(22, 4, 13, 2014, 'Nick Raskulinecz', 'Once More ''Round the Sun'),
-
--- Crowbar (artist_id = 5)
-(23, 5, 10, 1993, 'Phil Anselmo', 'Crowbar'),
-(24, 5, 11, 1996, 'Simon Efemy', 'Broken Glass'),
-(25, 5, 12, 1998, 'Keith Falgout', 'Odd Fellows Rest'),
-
--- Deftones (artist_id = 6)
-(26, 6, 11, 1997, 'Terry Date', 'Around the Fur'),
-(27, 6, 12, 2000, 'Terry Date', 'White Pony'),
-(28, 6, 11, 2010, 'Nick Raskulinecz', 'Diamond Eyes'),
-
--- Pain of Salvation (artist_id = 7)
-(29, 7, 10, 2000, 'Daniel Gildenlöw', 'The Perfect Element, Pt. I'),
-(31, 7, 10, 2002, 'Daniel Gildenlöw', 'Remedy Lane'),
-(32, 7, 10, 2017, 'Daniel Gildenlöw', 'In the Passing Light of Day'),
-(33, 7, 10, 2007, 'Daniel Gildenlöw', 'Scarsick'),
-
--- Periphery (artist_id = 8)
-(34, 8, 11, 2010, 'Misha Mansoor', 'Periphery'),
-(35, 8, 11, 2016, 'Misha Mansoor', 'Periphery III: Select Difficulty'),
-(36, 8, 11, 2012, 'Misha Mansoor', 'Periphery II: This Time It''s Personal'),
-(37, 8, 6, 2019, 'Misha Mansoor', 'Periphery IV: Hail Stan'),
-
--- Agalloch (artist_id = 9)
-(38, 9, 8, 2002, 'Agalloch', 'The Mantle'),
-(39, 9, 8, 2006, 'Billy Anderson', 'Ashes Against the Grain'),
-(40, 9, 8, 2004, 'Billy Anderson', 'Marrow of the Spirit'),
+-- Jamie Walsh (uid = 7)
+(24, 4, 'Reptile is a wild ride, nearly 16 minutes and never boring.', 7, 60, 'Reptile'),
+(25, 5, 'Ghosts of the Midwinter Fires is hauntingly beautiful.', 7, 65, 'Ghosts of the Midwinter Fires'),
+(26, 3, 'Fear the World is good but a little repetitive.', 7, 73, 'Fear the World'),
+(27, 5, 'Marigold has a great groove and melodic hooks.', 7, 57, 'Marigold');
