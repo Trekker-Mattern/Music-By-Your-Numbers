@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS rating (
 
 CREATE TABLE IF NOT EXISTS song(
 	song_id INT PRIMARY KEY,
+	song_name VARCHAR(50),
 	album_id INT,
 	artist_id INT NOT NULL,
 	duration_seconds INT,
@@ -53,5 +54,26 @@ CREATE TABLE IF NOT EXISTS artist(
 	founded_city VARCHAR(30)
 );
 
+CREATE TABLE IF NOT EXISTS playlist_songs(
+	playlist_id INT,
+	song_id INT,
 
+	FOREIGN KEY playlist_key(playlist_id) REFERENCES playlist(playlist_id),
+	FOREIGN KEY song_key(song_id) REFERENCES song(song_id)
+);
 
+------------------------------------------------------------------------------
+-- Adding Constraints
+------------------------------------------------------------------------------
+-- Song
+ALTER TABLE song ADD CONSTRAINT duration_constraint CHECK (duration_seconds > 0);
+
+-- Album
+ALTER TABLE album ADD CONSTRAINT song_count_constraint CHECK (song_count > 1);
+ALTER TABLE album ADD CONSTRAINT year_produced_constraint CHECK (year_produced BETWEEN `1700-01-01` AND now());
+
+-- User
+ALTER TABLE user ADD CONSTRAINT number_of_ratings_constraint CHECK (number_of_ratings >= 0);
+
+-- Artist
+ALTER TABLE artist ADD CONSTRAINT artist_name_constraint UNIQUE (artist_name);
