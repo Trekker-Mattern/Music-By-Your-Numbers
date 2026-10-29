@@ -260,7 +260,7 @@ INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALU
 (84, 'Lounge Act', 47, 12, 156),
 (85, 'Stay Away', 47, 12, 212),
 (86, 'On a Plain', 47, 12, 196),
-(87, 'Something in the Way', 47, 12, 232);
+(87, 'Something in the Way', 47, 12, 232)
 
 -- Alice in Chains - Dirt (artist_id = 13, album_id = 48)
 (88, 'Them Bones', 48, 13, 149),
@@ -277,3 +277,14 @@ INSERT INTO song(song_id, song_name, album_id, artist_id, duration_seconds) VALU
 (99, 'Angry Chair', 48, 13, 287),
 (100, 'Would?', 48, 13, 208);
 
+
+-- Demonstration time
+
+DELETE FROM rating WHERE rating_id=28;
+INSERT rating values (28, 4, 'I love Periphery and this song is awesome', 4, 57);
+
+
+INSERT user values (8,"TrekkerM", 0, "TrekkerM@Sotify");
+
+UPDATE rating SET val=5 WHERE posted_user=4 AND song_id IN (SELECT song_id FROM song INNER JOIN artist ON song.artist_id=artist.artist_id WHERE artist_name="Periphery"); 
+SELECT * FROM rating WHERE posted_use·r=4;
