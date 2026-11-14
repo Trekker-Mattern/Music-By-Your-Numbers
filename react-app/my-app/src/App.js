@@ -2,13 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const states = {
-    HOME: 'HOME',
-    SEARCH: 'SEARCH',
-    IMPORT: 'IMPORT',
-    PROFILE: 'PROFILE',
-  };
-  const currentState = states.HOME;
+  
   return (
     <div className="App">
       <header className="App-header">

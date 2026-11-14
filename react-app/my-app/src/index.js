@@ -5,14 +5,29 @@ import App from './App';
 import NavBar from './NavBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 
+const states = {
+    HOME: 'HOME',
+    SEARCH: 'SEARCH',
+    IMPORT: 'IMPORT',
+    PROFILE: 'PROFILE',
+  };
+  const currentState = states.HOME;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar />
-    <h1>Music By Your Numbers</h1>
-    <h3>Created by: <a href="https://github.com/Trekker-Mattern">Trekker Mattern</a>,
-     <a>Evan Englehardt</a>,
-      <a>Zachary Cotton</a></h3>
+    {/* State Management for Page Display */}
+    {currentState == states.HOME ? 
+    <>
+        <h1>Music By Your Numbers</h1>
+        <h3>Created by: <a href="https://github.com/Trekker-Mattern">Trekker Mattern</a>,
+        <a>Evan Englehardt</a>,
+        <a>Zachary Cotton</a></h3>
+    </> 
+    : null
+    }
+      
     <App />
   </React.StrictMode>
 );
