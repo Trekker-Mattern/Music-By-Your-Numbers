@@ -1,5 +1,5 @@
 -- Find Artists that Started in the same city
-SELECT artist_name FROM artist AS a1 WHERE (SELECT * FROM artist AS a2 WHERE a1.founded_city = a2.founded_city AND a1.artist_id != a2.artist_id);
+SELECT artist_name FROM artist AS a1 WHERE EXISTS (SELECT * FROM artist AS a2 WHERE a1.founded_city = a2.founded_city AND a1.artist_id != a2.artist_id);
 
 -- Find albums that contain a song that a user has rated 4 or more.
 SELECT album_name, artist_name FROM album NATURAL JOIN artist WHERE album_id IN (SELECT album_id FROM song INNER JOIN rating ON song.song_id=rating.song_id INNER JOIN user ON rating.posted_user=user.uid WHERE rating.val > 4);
@@ -24,3 +24,5 @@ from song inner join album on song.album_id = album.album_id
 inner join artist on album.artist_id = artist.artist_id
 inner join rating on song.song_id = rating.song_id
 group by rating.song_id;
+
+SELECT avg(rating.val) from rating group by rating.user_id;
