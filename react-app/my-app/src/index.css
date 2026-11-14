@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a{
+  color: #000000;
+  font-style: italic;
+  padding-left: 4px;
+  padding-right:4px;
+}
+a:active{
+  color: #000000;
+  font-style: italic;
+  background-color: #969696;
+}
+a:hover{
+  color: #000000;
+  border-width: 3em;
+  /*border-color: #b90000;*/
+  padding-left: 4px;
+  padding-right:4px;
+  border-radius: 3px;
+  font-style: italic;
+  background-color: #c0c0c0;
+}
